@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+body {
+  margin: 80px;
+  font-family: sans-serif;
+}
+
+.game {
+  max-width: 50%;
+  margin: auto;
+}
+
+.control {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  font-size: 20px;
+  justify-content: space-around;
+  background: #057c05;
+  color: white;
+}
+
+button {
+  background: #057c05;
+  font-size: 20px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e691e;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.number {
+  background: blue;
+  height: 80px;
+  color: white;
+  font-size: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.number:hover {
+  background: #3232a7;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+
+  .game {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .number {
+    height: 60px;
+    font-size: 20px;
+  }
+}
